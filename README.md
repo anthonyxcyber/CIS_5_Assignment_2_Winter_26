@@ -1,29 +1,74 @@
-# CIS_5_Assignment_2_Winter_26
-Assignment 2
+# CIS_5 Assignment 2 (Winter 2026)
 
-BMI and Grade Calculator Program
-Requirements
-Create a program that:
-1. User Information
-Ask for the user's name (store in a std::string variable)
-Ask for their age (store in an int)
-Ask for their height in meters (store in a double)
-Ask for their weight in kilograms (store in a double)
-2. BMI Calculation
-Calculate their BMI (Body Mass Index): bmi = weight / (height * height)
-Use conditionals to tell them their weight category:
-BMI < 18.5 → "Underweight"
-BMI 18.5–24.9 → "Normal weight"
-BMI 25–29.9 → "Overweight"
-BMI ≥ 30 → "Obese"
-3. Grade Calculation
-Ask for their test score (0–100, store in an int).
-Use conditionals to give a letter grade:
-90–100 → A
-80–89 → B
-70–79 → C
-60–69 → D
-Below 60 → F
-4. Final Output
-Finally, print a personalized message using their name, like:
-> "Hey [name], you're [age] years old with a BMI of [bmi] ([category]) and you got a grade [letter]! Keep it up! 🚀"
+A small C++ program that collects user information, calculates BMI (Body Mass Index), and converts a numeric test score into a letter grade.
+
+## What the program does
+1. Asks the user for basic information:
+   - Name
+   - Age
+   - Height (in meters)
+   - Weight (in kilograms)
+2. Calculates BMI and tells the user their weight category.
+3. Asks for a test score (0–100) and converts it to a letter grade.
+4. Prints a personalized summary message.
+
+## Inputs and types
+- Name: `std::string`
+- Age: `int`
+- Height (meters): `double`
+- Weight (kilograms): `double`
+- Test score (0–100): `int`
+
+## BMI calculation
+Formula:
+bmi = weight / (height * height)
+
+Categories:
+- BMI < 18.5 → Underweight  
+- BMI 18.5 – 24.9 → Normal weight  
+- BMI 25 – 29.9 → Overweight  
+- BMI ≥ 30 → Obese
+
+(Recommend printing BMI to 1–2 decimal places for readability.)
+
+## Grade calculation
+Convert the numeric score to a letter grade:
+- 90 – 100 → A  
+- 80 – 89 → B  
+- 70 – 79 → C  
+- 60 – 69 → D  
+- Below 60 → F
+
+## Final output
+Print a personalized message using the user's name, for example:
+
+"Hey Alex, you're 20 years old with a BMI of 22.45 (Normal weight) and you got a grade A! Keep it up! 🚀"
+
+## Example interaction
+(Example user input shown after prompts)
+
+```
+Enter your name: Alex
+Enter your age: 20
+Enter your height (meters): 1.75
+Enter your weight (kg): 68
+Enter your test score (0-100): 92
+
+Hey Alex, you're 20 years old with a BMI of 22.20 (Normal weight) and you got a grade A! Keep it up! 🚀
+```
+
+## Implementation notes / tips
+- Use `std::string` for the name and `int` / `double` for numeric inputs.
+- Use `std::fixed` and `std::setprecision(2)` (from `<iomanip>`) to format the BMI output.
+- Validate inputs where appropriate (e.g., non-negative height/weight, score between 0 and 100).
+- Keep the program interactive with clear prompts.
+
+## Build & run (example)
+If your program file is `main.cpp`, compile and run with:
+
+```bash
+g++ -std=c++17 -o assignment2 main.cpp
+./assignment2
+```
+
+Have fun implementing it — and let me know if you want a full sample C++ implementation.

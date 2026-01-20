@@ -57,6 +57,9 @@ Enter your test score (0-100): 92
 Hey Alex, you're 20 years old with a BMI of 22.20 (Normal weight) and you got a grade A! Keep it up! 🚀
 ```
 
+Video Link:
+https://drive.google.com/file/d/1zfNfKgdxaR9tXsuM09lDpe99dEZqgeBb/view?usp=sharing 
+
 ## Implementation notes / tips
 - Use `std::string` for the name and `int` / `double` for numeric inputs.
 - Use `std::fixed` and `std::setprecision(2)` (from `<iomanip>`) to format the BMI output.

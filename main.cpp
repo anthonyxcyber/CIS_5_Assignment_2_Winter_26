@@ -85,6 +85,3 @@ int main() {
     return 0;
 }
 
-Video Link:
-
-https://drive.google.com/file/d/1zfNfKgdxaR9tXsuM09lDpe99dEZqgeBb/view?usp=sharing 
